@@ -1,12 +1,15 @@
-import poke from "./assets/pokeapi_256.png";
-import eevee from './assets/eevee.jpg';
-import { Container, Row, Col, Image } from 'react-bootstrap';
-import './Home.css'; // Vamos usar isso para o fundo vermelho
+import './Home.css'; 
+import Pokeflex from "./Pokeflex";
+import Pokegrid from "./Pokegrid";
+import Menu from './Menu';
 
 const Home = () => {
   return (
       <div className="Home">
+          <Menu />
           <h1>Home</h1>
+          <Pokeflex />
+          <Pokegrid />
       </div>
   );
 };
